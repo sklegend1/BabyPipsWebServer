@@ -53,7 +53,7 @@ class NewsDataView(APIView):
 
         return results
 
-    def get(self,request):
+    def post(self,request):
 
         date_str1 = request.data.get('start_date')
         date_str2 = request.data.get('end_date')
